@@ -1,0 +1,54 @@
+#link-footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+    }
+
+}
+
+div.container {
+    display: flex;
+}
+
+#left-side {
+    gap: 2rem;
+    margin: 0;
+    flex-basis: 40%;
+    display: flex;
+
+}
+
+#sites,
+#dc,
+#dc-comic-links {
+    flex-basis: calc(100% / 3);
+    line-height: 1.5rem;
+}
+
+#right-side {
+    height: 400px;
+    flex-basis: 60%;
+    background-image: url(../img/dc-logo-bg.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 150px -50px;
+
+}
+
+h3 {
+    color: white;
+    padding: 1rem 0;
+}

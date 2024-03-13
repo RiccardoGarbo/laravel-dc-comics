@@ -1,0 +1,22 @@
+section {
+    background-color: #1C1C1C;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    a {
+        text-decoration: none;
+        display: inline;
+        flex-basis: calc(100% / 6);
+        padding: 0 10px;
+
+    }
+
+    .card {
+        padding: 0 10px;
+    }
+
+}
