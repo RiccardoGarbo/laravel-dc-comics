@@ -23,8 +23,10 @@ Route::get('/app', function () {
 //Rotta Home 
 Route::get('/', HomeController::class)->name('home');
 
-
+//Rotta Index
 Route::get('/comics', [ComicController::class , 'index'])->name('comics.index');
+//Rotta Show
+Route::get('/comics{comic}', [ComicController::class , 'show'])->name('comics.show');
 
 
 

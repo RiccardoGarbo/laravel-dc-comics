@@ -1,6 +1,6 @@
-@extends('layouts.app')
 
-@section('main-content')
+
+
 <div id="show">
     
         <div id="description">
@@ -31,20 +31,11 @@
         </div>
             <div>
                 <h5>Art by:</h5>
-            <ul>
-            @foreach ( $comic['artists'] as $artist )
-            <li>{{$artist}},</li>
-            @endforeach
-            </ul>
+           <p>{{$comic['artists']}}</p>
         </div>
         <div>
             <h5>Written by:</h5>
-            <ul>
-                @foreach ( $comic['writers'] as $artist )
-                <li>{{$artist}},</li>
-                @endforeach
-                </ul>
-            </div>
+            <p>{{$comic['writers']}}</p>
         </div>
         <div id="spec">
             <h3>Specs</h3>
@@ -62,4 +53,3 @@
 </div>
 </div>
     
-@endsection
