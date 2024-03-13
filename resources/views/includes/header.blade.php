@@ -3,7 +3,7 @@
     <nav>
         <ul>
             <li>@foreach ($header_links as $link )                         
-                <li>{{$link}}</a>                                                         
+                <li>{{$link}}                                                        
                 </li>
                 @endforeach
             </li>
