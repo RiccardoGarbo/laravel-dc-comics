@@ -11,16 +11,14 @@
 </head>
 <body> 
     <!--HEADER-->
-    @include('includes.header')
+    @yield('header')
     <!--JUMBOTRON-->
-    @include('includes.jumbotron')
+    @yield('jumbotron')
     <!--Section Main-->
     @yield('main-content')
     <!--FOOTER-->
-    @include('includes.footer')
+    @yield('footer')
     <!--Script-->
     @yield('scripts')
-
-
 </body>
 </html>

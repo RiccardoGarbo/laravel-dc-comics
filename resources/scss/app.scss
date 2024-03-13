@@ -1,4 +1,3 @@
-@use "card";
 @use "footer_end_page";
 @use "footer_links";
 @use "header";
@@ -6,6 +5,7 @@
 @use "main";
 @use "generics";
 @use "show";
-@use "index"
+@use "index";
+@use "card";
 
 // @import '~bootstrap/scss/bootstrap';

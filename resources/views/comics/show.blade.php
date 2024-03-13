@@ -1,8 +1,8 @@
 
 
-
+@extends('layouts.app')
+@section('main-content')
 <div id="show">
-    
         <div id="description">
         <div id="left-description" >
             <h1>{{$comic['title']}}</h1>
@@ -52,4 +52,5 @@
     </div>
 </div>
 </div>
+@endsection
     
