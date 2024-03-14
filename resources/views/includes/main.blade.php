@@ -1,11 +1,11 @@
 <section>
     <div class=" card-container container">
-        
+
         @foreach ($comics as $comic)
         <a href="{{route('comics.index')}}">
-           <div class="card">
+           <div>
                <img src="{{$comic->thumb}}" alt="">
-               <h5>{{$comic->title}}</h5>  
+               <h5 class="text-white" >{{$comic->title}}</h5>  
             </div>  
         </a>                                                     
         @endforeach

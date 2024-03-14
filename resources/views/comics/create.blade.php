@@ -1,61 +1,46 @@
 @extends('layouts.app')
-<div id="create-form">
-<form action="{{route('comics.store')}}" method="POST">
+
+<div class="container">
+<form action="{{route('comics.store')}}" method="POST" class="row g-3">
     @csrf
-    <div>
-        <h4>Titolo</h4>
-    <label for="title">
-        <input type="text" name="title"> 
-    </label>
+    <div class="col-4">
+      <label for="Title" class="form-label">Titolo:</label>
+      <input type="text" class="form-control" name="title" >
     </div>
-    <div>
-        <h4>Descrizione</h4>
-    <label for="description">
-        <input type="text" name="description"> 
-    </label>
+    <div class="col-8">
+        <label for="Description" class="form-label">Descrizione:</label>
+        <textarea name="description" class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    <div class="col-12">
+      <label for="thumb" class="form-label">Immagine:</label>
+      <input type="text" class="form-control" name="thumb">
     </div>
-    <div>
-        <h4>Immagine</h4>
-    <label for="image">
-        <input type="text" name="thumb"> 
-    </label>
+    <div class="col-4">
+      <label for="price" class="form-label">Prezzo:</label>
+      <input type="text" class="form-control" name="price">
     </div>
-    <div>
-        <h4>Prezzo</h4>
-    <label for="price">
-        <input type="text" name="price"> 
-    </label>
-</div>
-<div>
-    <h4>Serie</h4>
-    <label for="serie">
-        <input type="text" name="series"> 
-    </label>
-</div>
-<div>
-    <h4>Data rilascio</h4>
-    <label for="sale">
-        <input type="text" name="sale_date"> 
-    </label>
-</div>
-<div>
-    <h4>Genere</h4>
-    <label for="type">
-        <input type="text" name="type"> 
-    </label>
-</div>
-<div>
-    <h4>Artista/Artisti</h4>
-    <label for="artists">
-        <input type="text" name="artists"> 
-    </label>
-</div>
-<div>
-    <h4>Scrittore/Scrittori</h4>
-    <label for="writers">
-        <input type="text" name="writers"> 
-    </label>
-</div>
-    <input type="submit" value="Invia">
-</form>
+    <div class="col-4">
+      <label for="price" class="form-label">Serie:</label>
+      <input type="text" class="form-control" name="series">
+    </div>
+    <div class="col-4">
+      <label for="inputCity" class="form-label">Data di uscita:</label>
+      <input type="text" class="form-control" name="sale_date">
+    </div>
+    <div class="col-4">
+      <label for="inputState" class="form-label">Genere:</label>
+      <input type="text" class="form-control" name="type">
+    </div>
+    <div class="col-4">
+      <label for="inputZip" class="form-label">Artista/Artisti:</label>
+      <input type="text" class="form-control" name="artists">
+    </div>
+    <div class="col-4">
+      <label for="inputZip" class="form-label">Scrittore/Scrittice:</label>
+      <input type="text" class="form-control" name="writers">
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Vai</button>
+    </div>
+  </form>
 </div>

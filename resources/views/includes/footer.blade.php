@@ -5,7 +5,7 @@
             <div id="dc-comic-links">
                 <div id="dc-comics">
                     <!--LINK DC COMICS-->
-                    <h3>DC COMICS</h3>
+                    <h3 class="text-white">DC COMICS</h3>
                     <ul>
                         @foreach ($dc_comics_links as $link )                         
                         <li><a href="#">{{$link}} </a>                                                         
@@ -16,7 +16,7 @@
                 <!--LINK SHOP-->
 
                 <div id="shop-links">
-                    <h3>SHOP</h3>
+                    <h3 class="text-white">SHOP</h3>
                     <ul>@foreach ($shop_links as $link )                         
                         <li><a href="#">{{$link}} </a>                                                         
                         </li>
@@ -26,7 +26,7 @@
             </div>
             <!--LINK DC-->
             <div id='dc'>
-                <h3>DC</h3>
+                <h3 class="text-white">DC</h3>
                 <ul>@foreach ($dc_links as $link )                         
                     <li><a href="#">{{$link}} </a>                                                         
                     </li>
@@ -35,7 +35,7 @@
             </div>
             <!--LINK SITES-->
             <div id="sites">
-                <h3>SITES</h3>
+                <h3 class="text-white">SITES</h3>
                 <ul>@foreach ($sites_links as $link )                         
                     <li><a href="#">{{$link}} </a>                                                         
                     </li>
