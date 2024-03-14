@@ -9,5 +9,6 @@
             </div>  
         </a>                                                     
         @endforeach
+        <a class="btn btn-success py-3" type="button" href="{{route('comics.create')}}">Aggiungi Fumetto!</a>
     </div>
 </section>
