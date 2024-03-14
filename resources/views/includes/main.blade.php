@@ -1,6 +1,5 @@
 <section class="py-5">
     <div class=" card-container container">
-
         @foreach ($comics as $comic)
         <a href="{{route('comics.index')}}">
            <div>

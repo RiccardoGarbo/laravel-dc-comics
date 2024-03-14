@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 <h1 class="text-center">Compila il form per aggiungere un nuovo fumetto!</h1>
 <div class="container">
 <form action="{{route('comics.store')}}" method="POST" class="row g-3">
