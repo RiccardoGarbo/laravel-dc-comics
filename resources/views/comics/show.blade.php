@@ -5,7 +5,7 @@
 <div id="show">
     <div class="container">
         <div class="left">
-        <img src="{{$comic['thumb']}}" alt="">
+        <img class="img-fluid" src="{{$comic['thumb']}}" alt="immagine fumetto">
         </div>
         <div class="right">
             <h1>{{$comic['title']}}</h1>

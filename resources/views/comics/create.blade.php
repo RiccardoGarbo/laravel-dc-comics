@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<h1 class="text-center">Compila il form per aggiungere un nuovo fumetto!</h1>
 <div class="container">
 <form action="{{route('comics.store')}}" method="POST" class="row g-3">
     @csrf
@@ -13,7 +14,7 @@
       </div>
     <div class="col-12">
       <label for="thumb" class="form-label">Immagine:</label>
-      <input type="text" class="form-control" name="thumb">
+      <input type="text" class="form-control" name="thumb" placeholder="Inserisci un url per aggiungere un'immagine.">
     </div>
     <div class="col-4">
       <label for="price" class="form-label">Prezzo:</label>
