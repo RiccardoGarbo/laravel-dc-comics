@@ -28,7 +28,7 @@ Route::get('/comics', [ComicController::class , 'index'])->name('comics.index');
 //Rotta Show
 Route::get('/comics{comic}', [ComicController::class , 'show'])->name('comics.show');
 //Rotta Create
-Route::get('/comics/Create' , [ComicController::class , 'create'])->('comics.create')
+Route::get('/comics/create' , [ComicController::class , 'create'])->name('comics.create');
 
 
 
