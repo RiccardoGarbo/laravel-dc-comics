@@ -30,8 +30,10 @@ class ComicController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
-        Team::create($data);
-        return to_route('comics.show', $team->id);
+        $newComic = new Comic();
+        $newComic->fill($data);
+        $newComic->save();
+        return to_route('comics.show', $newComic->id);
     }
 
     /**
