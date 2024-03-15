@@ -32,7 +32,9 @@ Route::get('/comics/create' , [ComicController::class , 'create'])->name('comics
 //Rotta Store
 Route::post('/comics', [ComicController::class , 'store'])->name('comics.store');
 //Rotta Edit
-Route::get('/comics/{comic}/edit' , [ComicController::class , 'edit'])('comics.edit');
+Route::get('/comics/{comic}/edit' , [ComicController::class , 'edit'])->name('comics.edit');
+//Rotta update
+Route::put('/comics/{comic}' , [ComicController::class , 'update'])->name('comics.update');
 
 
 
