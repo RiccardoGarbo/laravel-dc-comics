@@ -1,6 +1,15 @@
 @extends('layouts.app')
 <h1 class="text-center">Compila il form per aggiungere un nuovo fumetto!</h1>
 <div class="container">
+  @if ($errors->any())
+  <div class="alert alert-danger">
+    <ul>
+      @foreach ($errors->all() as $error )
+      <li>{{ $error}}</li>
+      @endforeach
+    </ul>
+  </div>
+  @endif
 <form action="{{route('comics.store')}}" method="POST" class="row g-3">
     @csrf
     <div class="col-4">
