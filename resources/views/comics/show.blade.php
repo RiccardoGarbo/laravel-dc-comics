@@ -16,7 +16,11 @@
                 <h4><span>Autori:</span>{{$comic['artists']}}</h4>
                 <h4><span>Scrittori:</span>{{$comic['writers']}}</h4>
             </div>
-            <a href="{{route('home')}}">Torna alla Home</a>
+            <div class="d-flex">
+            <a class="btn btn-info" href="{{route('home')}}">Torna alla Home</a>
+            <a class="btn btn-warning" href="{{route('comics.edit', $comic)}}">Modifica</a>
+        </div>
+        
         </div>
     </div>
 </div>
