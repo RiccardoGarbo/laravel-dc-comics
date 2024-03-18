@@ -19,6 +19,11 @@
             <div class="d-flex">
             <a class="btn btn-info" href="{{route('home')}}">Torna alla Home</a>
             <a class="btn btn-warning" href="{{route('comics.edit', $comic)}}">Modifica</a>
+            <form action="{{route('comics.destroy' , $comic)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit">Cancella</button>
+            </form>
         </div>
         
         </div>
